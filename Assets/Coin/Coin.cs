@@ -3,10 +3,14 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+
+    public static int coinsCount = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("El juego ha comenzado");
+        Coin.coinsCount++;
+        Debug.Log("El juego ha comenzado y ahora hay" + Coin.coinsCount + ("monedas"));
     }
 
     // Update is called once per frame
@@ -16,8 +20,21 @@ public class Coin : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider otherCollirder)
     {
-        Debug.Log("Algo ha colisionado con la moeda");
+        if (otherCollirder.CompareTag("Player") == true)
+        {
+            
+            Coin.coinsCount--;
+
+            Debug.Log("Hemos recogido la moneda y ahora hay" + Coin.coinsCount + ("monedas"));
+
+            if (Coin.coinsCount == 0)
+            {
+                Debug.Log("El juego ha terminado");
+            }
+
+            Destroy(gameObject);
+        }
     }
 }
