@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Estamos en el update");
+        //Debug.Log("Estamos en el update");
     }
 
 
@@ -32,6 +32,12 @@ public class Coin : MonoBehaviour
             if (Coin.coinsCount == 0)
             {
                 Debug.Log("El juego ha terminado");
+
+                GameObject gameManager = GameObject.Find("GameManager");
+
+                Destroy(gameManager);
+                    
+
             }
 
             Destroy(gameObject);
