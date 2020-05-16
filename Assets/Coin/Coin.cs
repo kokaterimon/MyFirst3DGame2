@@ -36,8 +36,13 @@ public class Coin : MonoBehaviour
                 GameObject gameManager = GameObject.Find("GameManager");
 
                 Destroy(gameManager);
-                    
 
+                GameObject[] fireworksSystem = GameObject.FindGameObjectsWithTag("Fireworks");
+
+                foreach(GameObject fireworks in fireworksSystem)
+                {
+                    fireworks.GetComponent<ParticleSystem>().Play();
+                }
             }
 
             Destroy(gameObject);
