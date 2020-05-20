@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
-{
+public class Coin : MonoBehaviour{
+
 
     public static int coinsCount = 0;
 
