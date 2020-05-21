@@ -67,11 +67,29 @@ public class DecisionScript : MonoBehaviour{
             Debug.LogError("Velocidad no válidad...");
         }
 
+        if (EnterTheParty(30, 25))
+        {
+            Debug.Log("Bienvenido a la fiesta!");
+        }else
+        {
+            Debug.Log("No tienes permiso para entrar");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    bool EnterTheParty(int age, int money)
+    {
+        if(age >= 18 && money >= 10)
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
     }
 }

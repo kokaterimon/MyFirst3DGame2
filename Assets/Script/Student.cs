@@ -9,7 +9,12 @@ public class Student : MonoBehaviour{
     public string email = "Anakin@starwars.com";
     public int age = 10;
     public float height = 1.78f;
-    public float weigth = 25.5f;    
+    public float weigth = 25.5f;
+
+    bool booleanVariable; //true o false
+    int integerVariable; //-3, -2, -1, 0, 1, 2, 3,...
+    float realVariable; //3.14159265, 6.28, -4.73
+    char characterVariable; // 'a', 'b', '7', '@', '#', '$'
 
     // Start is called before the first frame update
     void Start()
