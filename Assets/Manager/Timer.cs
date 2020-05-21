@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour{
     {
         countdown -= Time.deltaTime;
 
-        //Debug.Log("Cuenta atrás :" + countdown);
+        Debug.Log("Cuenta atrás :" + countdown);
         if (countdown <= 0)
         {
             Debug.Log("Te has quedado sin tiempo... HAS PERDIDO!!!!");

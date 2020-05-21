@@ -22,6 +22,16 @@ public class VariableScript : MonoBehaviour{
     void Start()
     {
         Debug.Log("El objeto ha arrancado");
+
+        int result = AddtwoNumbers(5, 8);
+
+        Debug.Log(result);//13
+
+        AddtwoNumbers(6, -9);
+
+        SayHello("Anakin");
+
+        string myMenssage = CreateWelcome("Anakin Skywalker");
     }
 
     // Update is called once per frame
@@ -31,7 +41,7 @@ public class VariableScript : MonoBehaviour{
         
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            AddtwoNumbers();
+            AddtwoGlobalNumbers();
         }
     }
 
@@ -40,8 +50,35 @@ public class VariableScript : MonoBehaviour{
         Debug.Log(Time.time);
     }
 
-    void AddtwoNumbers()
+    void AddtwoGlobalNumbers()
     {
         Debug.Log(number1 + number2);
+    }
+
+    void AddtwoNumbersAndShowReasultInConsole(int firstNumber, int secondNumber)
+    {
+        Debug.Log(firstNumber+secondNumber);
+    }
+
+    void AddtwoNumbers(int firstNumber,int secondNumber)
+    {
+        int result = firstNumber + secondNumber;
+        return result;
+    }
+
+    void SayHello(string username)
+    {
+        Debug.Log("Hola"+username);
+    }
+
+    string CreateWelcome(string username)
+    {
+        string message = "Bienvenido al Curso" + username;
+        return message;
+    }
+
+    void DoubleNumber(float number)
+    {
+        Debug.Log(2.0f * number);
     }
 }
