@@ -57,10 +57,10 @@ public class VariableScript : MonoBehaviour{
 
     void AddtwoNumbersAndShowReasultInConsole(int firstNumber, int secondNumber)
     {
-        Debug.Log(firstNumber+secondNumber);
+        Debug.Log(firstNumber + secondNumber);
     }
 
-    void AddtwoNumbers(int firstNumber,int secondNumber)
+    int AddtwoNumbers(int firstNumber,int secondNumber)
     {
         int result = firstNumber + secondNumber;
         return result;
