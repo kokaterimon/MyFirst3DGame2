@@ -347,8 +347,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46589059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -249, z: 0}
-  m_LocalScale: {x: 103.942764, y: 9.096412, z: 102.18887}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalScale: {x: 97.51131, y: 9.096412, z: 99.634155}
   m_Children: []
   m_Father: {fileID: 914177662}
   m_RootOrder: 5
@@ -1580,8 +1580,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911433066}
-  m_LocalRotation: {x: 0.087172285, y: 0.89959055, z: 0.21045254, w: -0.37262255}
-  m_LocalPosition: {x: 200.67181, y: -11.406608, z: 152.73537}
+  m_LocalRotation: {x: -0.22975296, y: 0, z: 0, w: 0.973249}
+  m_LocalPosition: {x: 228.99988, y: -84.34444, z: 55.251324}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2334,8 +2334,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537207980}
-  m_LocalRotation: {x: 0.087172285, y: 0.89959055, z: 0.21045254, w: -0.37262255}
-  m_LocalPosition: {x: 200.67181, y: -11.406608, z: 152.73537}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 198.52963, y: -20.242004, z: 121.43962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2435,6 +2435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1705889514}
   - component: {fileID: 1705889513}
+  - component: {fileID: 1705889515}
   m_Layer: 0
   m_Name: Test Object
   m_TagString: Untagged
@@ -2470,6 +2471,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1705889515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705889512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bba8365e6430a4c8f4ca386f011a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  student1: Luke
+  student2: Leia
+  student3: Han
+  student4: Rey
+  student5: Kilo Ren
+  studentsArray:
+  - Luke
+  - Leia
+  - Han
+  - Rey
+  - Kilo Ren
+  familyNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  studentsNames: []
 --- !u!1 &1749408654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,7 +2625,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797319307}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee79c8e2779ba6a42902ddd41fbf5ccf, type: 3}
   m_Name: 

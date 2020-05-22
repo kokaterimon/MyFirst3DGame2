@@ -15,17 +15,17 @@ public class VariableScript : MonoBehaviour{
 
     private void Awake()
     {
-        Debug.Log("El objeto ha despertado");
+        //Debug.Log("El objeto ha despertado");
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("El objeto ha arrancado");
+        //Debug.Log("El objeto ha arrancado");
 
         int result = AddtwoNumbers(5, 8);
 
-        Debug.Log(result);//13
+       //Debug.Log(result);//13
 
         AddtwoNumbers(6, -9);
 
@@ -37,7 +37,7 @@ public class VariableScript : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("El objeto se está actualizando");
+        //Debug.Log("El objeto se está actualizando");
         
         if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -47,17 +47,17 @@ public class VariableScript : MonoBehaviour{
 
     private void FixedUpdate()
     {
-        Debug.Log(Time.time);
+        //Debug.Log(Time.time);
     }
 
     void AddtwoGlobalNumbers()
     {
-        Debug.Log(number1 + number2);
+        //Debug.Log(number1 + number2);
     }
 
     void AddtwoNumbersAndShowReasultInConsole(int firstNumber, int secondNumber)
     {
-        Debug.Log(firstNumber + secondNumber);
+        //Debug.Log(firstNumber + secondNumber);
     }
 
     int AddtwoNumbers(int firstNumber,int secondNumber)
@@ -68,7 +68,7 @@ public class VariableScript : MonoBehaviour{
 
     void SayHello(string username)
     {
-        Debug.Log("Hola"+username);
+        //Debug.Log("Hola"+username);
     }
 
     string CreateWelcome(string username)
@@ -79,6 +79,6 @@ public class VariableScript : MonoBehaviour{
 
     void DoubleNumber(float number)
     {
-        Debug.Log(2.0f * number);
+        //Debug.Log(2.0f * number);
     }
 }
