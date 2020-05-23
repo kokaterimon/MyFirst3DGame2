@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -63,20 +63,20 @@ public class CollectionsScript : MonoBehaviour{
         //ADD -> añade elementos al final de la lista
         //aquí, la lista está vacía
 
-        studentsNames.Add("Luke");        
+        studentsNames.Add("Luke");
         //aquí, la lista tiene un elemento, Luke
 
         studentsNames.Add("Leia");        
         //aquí, la lista tiene dos elementos, Luke y Leia
 
-        studentsNames.Add("Han");        
+        studentsNames.Add("Han");
         //aquí, la lista tiene tres elementos, Luke, Leia y Han
 
         studentsNames.Add("Rey");
         
         //aquí, la lista tiene tres elementos, Luke, Leia, Han y Rey
 
-        studentsNames.Add("Kilo Ren");        
+        studentsNames.Add("Kilo Ren");
         //aquí, la lista tiene cutro elementos, Luke, Leia, Han, Rey y Kilo Ren
 
         studentsNames.Add("Jango");        
