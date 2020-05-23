@@ -82,10 +82,29 @@ public class CollectionsScript : MonoBehaviour{
         //studentsNames.Clear();
         //ahora el Array está vacía [];
 
-        Debug.Log("El primer estudiante del array:"+studentsArray[0]);//El primer estudiante del array
+        
+        //Acceso a array y tamaño del mismo
+        Debug.Log("El tamaño del array de es : "+studentsArray.Length);
 
-        string thirdStudent = studentsNames[2];//El tercer estudiante de la lista
-        Debug.Log("El tercer estudiante de la lista:"+thirdStudent);
+        int pos = 0;
+
+        if (pos >= 06 && pos < studentsArray.Length)
+        {
+            Debug.Log("El primer estudiante del array:" + studentsArray[pos]);//El primer estudiante del array
+        }
+
+
+        //Acceso a lista y tamaño de las mismas
+        Debug.Log("El tamaño de la lista de estudiantes es : " + studentsNames.Count);
+
+        pos = 2;
+
+        if (pos >= 0 && pos < studentsNames.Count)
+        {
+            string thirdStudent = studentsNames[pos];//El tercer estudiante de la lista
+            Debug.Log("El tercer estudiante de la lista : " + thirdStudent);
+        }
+
         
     }
 
