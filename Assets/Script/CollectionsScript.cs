@@ -16,9 +16,9 @@ public class CollectionsScript : MonoBehaviour{
 
     /*
      * ARRAY
-     * - Es homogéneo (solo un tipo de dato)
-     * - Es de tamaño fijo (una vez creado, no puede contener más elementos)
-     * - Tiene un orden(se aceede por posición)
+      * - Es homogéneo (solo un tipo de dato)
+      * - Es de tamaño fijo (una vez creado, no puede contener más elementos)
+      * - Tiene un orden(se aceede por posición)
     */
 
     public string[] studentsArray = new string[] { "Luke", "Leia", "Han", "Rey", "Kilo Ren" };
@@ -31,14 +31,31 @@ public class CollectionsScript : MonoBehaviour{
 
 
     /*
-     *   LISTA
-     * - Es homogéneo (solo un tipo de dato)
-     * - Es de tamaño ajustable o variable (podemos más elementos en tiempo real y eliminarlos)
-     * - Tiene un orden(se aceede por posición)
+      *   LISTA
+      * - Es homogéneo (solo un tipo de dato)
+      * - Es de tamaño ajustable o variable (podemos más elementos en tiempo real y eliminarlos)
+      * - Tiene un orden(se aceede por posición)
     */
 
     public List<string> studentsNames = new List<string>();
 
+    /*
+      * ARRAYLIST
+      * -Es heterogéneo (pude guardar diferentes tipos de datos en la misma estructura)
+      * - Es de tamaño ajustable o variable (podemos más elementos en tiempo real y eliminarlos) 
+      * - Tiene un orden(se aceede por posición)
+    */
+
+    public ArrayList inventory = new ArrayList();
+
+    /*
+     * DICCIONARIO <-HASHTABLE>
+     * -se puede redimensionar dinámicamente (igual que una lista)
+     * -puede contener información heterogena (podemos añadir más elementos en tiempo real y eliminarlos)
+     * -Tiene un orden (se accede por posición)
+    */
+
+    public Hashtable personalDetails = new Hashtable();
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +100,7 @@ public class CollectionsScript : MonoBehaviour{
         //ahora el Array está vacía [];
 
         
-        //Acceso a array y tamaño del mismo
+        //Acceso a arrays y tamaño del mismo
         Debug.Log("El tamaño del array de es : "+studentsArray.Length);
 
         int pos = 0;
@@ -105,7 +122,36 @@ public class CollectionsScript : MonoBehaviour{
             Debug.Log("El tercer estudiante de la lista : " + thirdStudent);
         }
 
-        
+
+        inventory.Add(30);
+        inventory.Add(3.14159265);
+        inventory.Add("Anakin Skywalker");
+        inventory.Add(false);
+        inventory.Add(GameObject.FindGameObjectsWithTag("Fireworks"));
+
+        //Pedimos el tipo de dato que va a salir de la arraylist)
+        Debug.Log(inventory[2].GetType());
+        Debug.Log(inventory[4].GetType());
+
+
+        personalDetails.Add("firstName",   "Anakin Skywalker");
+        personalDetails.Add("lastName",    "Paucar");
+        personalDetails.Add("age",         10);
+        personalDetails.Add("gender",      "male");
+        personalDetails.Add("isMarried",   false);
+        personalDetails.Add("hasChildren", false);
+
+        if (personalDetails.Contains("firstName") && personalDetails.Contains("age"))
+        {
+            string name = (string)personalDetails["DNI"];
+            int age = (int)personalDetails["age"];
+
+            Debug.Log(personalDetails[name]);
+        }else
+        {
+            Debug.Log("El diccionario no contiene las claves que se han pedido");
+        }
+
     }
 
     // Update is called once per frame
