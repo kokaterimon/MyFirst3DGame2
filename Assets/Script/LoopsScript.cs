@@ -82,6 +82,15 @@ public class LoopsScript : MonoBehaviour
             Debug.Log(counter);
             counter++;
         }
+
+        bool isRainig = false;
+        while (!isRainig)
+        {
+            //ir a la playa
+            //controlar si llueve
+
+        }
+        
     }
 
     // Update is called once per frame
