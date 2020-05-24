@@ -30,7 +30,7 @@ public class LoopsScript : MonoBehaviour
         int[] someInts = new int[] { 4, 8, 3, 0, 9, 6, 8, 7 };
         int sum = 0;
         int n = someInts.Length;
-        foreach(int i in someInts)
+        foreach (int i in someInts)
         {
             sum = sum + i;
             Debug.Log("La suma vale ahora: " + sum);
@@ -55,10 +55,10 @@ public class LoopsScript : MonoBehaviour
         Debug.Log("CUENTA ATRÁS CON EL FOR");
         for (int j = 10; j >= 0; j--)
         {
-            Debug.Log(j);   
+            Debug.Log(j);
         }
 
-        for(int pos = 0; pos < studentsNames.Count; pos++)
+        for (int pos = 0; pos < studentsNames.Count; pos++)
         {
             string name = studentsNames[pos];
             Debug.Log("El elemento número " + pos + " de la lista es " + studentsNames[pos]);
@@ -88,15 +88,64 @@ public class LoopsScript : MonoBehaviour
         {
             //ir a la playa
             //controlar si llueve
-
+            isRainig = true;
         }
-        
+
+
+        for (int i = 0; i < 100; i++)
+        {
+            if (i == 0)
+            {
+                Debug.Log("El número cero es especial...");
+            } else if (IsNumberEven(i))
+            {
+                Debug.Log("El número " + i + " es par.");
+            } else
+            {
+                Debug.Log("El número " + i + " es impar.");
+            }
+        }
+
+        Debug.Log("Números primos");
+
+        int number = 42;
+        bool isPrime = true;
+        for(int i = 2; i < number; i++)
+        {
+            int remaider = number % i;
+            if(number % i == 0)
+            {
+                isPrime = false;
+            }
+        }
+        if (isPrime)
+        {
+            Debug.Log("El número " + number + " es primo.");
+        }
+        /*else
+        {
+            Debug.Log("El número " + number + " es compuesto.");
+        }*/
+
     }
 
-    // Update is called once per frame
-    void Update()
+    Debug.Log("Algoritmos de búsqueda");
+
+    public bool IsNumberEven(int number)
     {
-            
+        //int quotient = number / 2;
+        int remainder = number % 2;
+
+        if (remainder == 0)
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
+
     }
+
+  
 }       
  
