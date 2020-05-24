@@ -110,10 +110,10 @@ public class LoopsScript : MonoBehaviour
 
         int number = 42;
         bool isPrime = true;
-        for(int i = 2; i < number; i++)
+        for (int i = 2; i < number; i++)
         {
             int remaider = number % i;
-            if(number % i == 0)
+            if (number % i == 0)
             {
                 isPrime = false;
             }
@@ -127,9 +127,29 @@ public class LoopsScript : MonoBehaviour
             Debug.Log("El número " + number + " es compuesto.");
         }*/
 
+        Debug.Log("Algoritmos de búsqueda");
+
+        int objectPos = -1;
+        for (int i = 0; i < studentsNames.Count; i++)
+        {
+            if(studentsNames[i]== "Luke")
+            {
+                objectPos = i;
+                break;
+                
+            }
+        }
+
+        if (objectPos == -1)
+        {
+            Debug.Log("Nos hemos encontrado el objeto que buscabas...");
+        }else
+        {
+            Debug.Log("El objeto buscado se encuentra en la posición " + objectPos);
+        }
     }
 
-    Debug.Log("Algoritmos de búsqueda");
+
 
     public bool IsNumberEven(int number)
     {
@@ -144,7 +164,7 @@ public class LoopsScript : MonoBehaviour
             return false;
         }
 
-    }
+   }
 
   
 }       
