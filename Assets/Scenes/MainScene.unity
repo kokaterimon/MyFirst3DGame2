@@ -2438,6 +2438,7 @@ GameObject:
   - component: {fileID: 1705889517}
   - component: {fileID: 1705889515}
   - component: {fileID: 1705889516}
+  - component: {fileID: 1705889518}
   m_Layer: 0
   m_Name: Test Object
   m_TagString: Untagged
@@ -2510,7 +2511,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705889512}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 684767bc284208640be716c3aef59332, type: 3}
   m_Name: 
@@ -2522,12 +2523,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705889512}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1317a24ecdfc6fb40bb8c838fb83daf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   willItRainToday: 0
+--- !u!114 &1705889518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705889512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f18be4313f8abb47bfe5e47f6c5ddf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1749408654
 GameObject:
   m_ObjectHideFlags: 0
