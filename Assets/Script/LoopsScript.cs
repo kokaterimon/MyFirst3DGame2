@@ -132,11 +132,11 @@ public class LoopsScript : MonoBehaviour
         int objectPos = -1;
         for (int i = 0; i < studentsNames.Count; i++)
         {
+            Debug.Log("Vamos por la literaciòn nùmero " + i);
             if(studentsNames[i]== "Luke")
             {
                 objectPos = i;
-                break;
-                
+                break;                
             }
         }
 

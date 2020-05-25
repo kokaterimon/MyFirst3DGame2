@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectionsScript : MonoBehaviour{
 
-    public string student1 = "Luke";
+    public string student1 = "Anakin";
     public string student2 = "Leia";
     public string student3 = "Han";
     public string student4 = "Rey";
@@ -21,7 +21,7 @@ public class CollectionsScript : MonoBehaviour{
       * - Tiene un orden(se aceede por posición)
     */
 
-    public string[] studentsArray = new string[] { "Luke", "Leia", "Han", "Rey", "Kilo Ren" };
+    public string[] studentsArray = new string[] { "Anakin", "Leia", "Han", "Rey", "Kilo Ren" };
 
     public string[] familyNames = new string[5];
 
@@ -63,7 +63,7 @@ public class CollectionsScript : MonoBehaviour{
         //ADD -> añade elementos al final de la lista
         //aquí, la lista está vacía
 
-        studentsNames.Add("Luke");
+        studentsNames.Add("Anakin");
         //aquí, la lista tiene un elemento, Luke
 
         studentsNames.Add("Leia");        
@@ -125,7 +125,7 @@ public class CollectionsScript : MonoBehaviour{
 
         inventory.Add(30);
         inventory.Add(3.14159265);
-        inventory.Add("Anakin Skywalker");
+        inventory.Add("Luke Skywalker");
         inventory.Add(false);
         inventory.Add(GameObject.FindGameObjectsWithTag("Fireworks"));
 
@@ -134,7 +134,7 @@ public class CollectionsScript : MonoBehaviour{
         Debug.Log(inventory[4].GetType());
 
 
-        personalDetails.Add("firstName",   "Anakin Skywalker");
+        personalDetails.Add("firstName",   "Luke Skywalker");
         personalDetails.Add("lastName",    "Paucar");
         personalDetails.Add("age",         10);
         personalDetails.Add("gender",      "male");

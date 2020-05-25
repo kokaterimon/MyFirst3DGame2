@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Student : MonoBehaviour{
 
-    public string firstName = "Anakin";
+    public string firstName = "Luke";
     public string lastName = "Skywalker";
-    public string email = "Anakin@starwars.com";
+    public string email = "Luke@starwars.com";
     public int age = 10;
     public float height = 1.78f;
     public float weigth = 25.5f;
