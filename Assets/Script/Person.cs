@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Person {
 
-    public string firtsName;
-    public string lastName;
+    private string firtsName;
+    private string lastName;
     public int age;
     public bool isMale;
 
@@ -21,6 +21,14 @@ public class Person {
     {
         this.firtsName = pFirstName;
         this.lastName = pLastName;
+    }
+
+    public Person(string firstName, string lastName, int age, bool isMale)
+    {
+        this.firtsName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.isMale = isMale;
     }
 
     public bool IsMarriedWith(Person otherPerson)
@@ -48,4 +56,20 @@ public class Person {
     {
         Debug.Log("Hola que tal!");
     }
+
+    /*SETTERS Y GETTERS*/
+    public void setFirstName(string firstName)
+    {
+        this.firtsName = firstName;
+    }
+    public void setLastName(string lastName)
+    {
+        this.lastName = lastName;
+    }
+
+    /*public string getFirstName()
+    {
+
+    }
+    */s
 }
