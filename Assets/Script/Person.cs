@@ -67,9 +67,12 @@ public class Person {
         this.lastName = lastName;
     }
 
-    /*public string getFirstName()
+    public string getFirstName()
     {
-
+        return this.firtsName;
     }
-    */s
+    public string getLastName()
+    {
+        return this.lastName;
+    }
 }

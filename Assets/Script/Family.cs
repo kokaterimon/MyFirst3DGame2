@@ -30,14 +30,14 @@ public class Family : MonoBehaviour{
 
         son.spouse = null;
 
-        Debug.Log(father.firtsName + " y " + mother.firtsName + " tiene un hijo llamado " + son.firtsName + " y una hija llamada " + daughter.firtsName);
+        Debug.Log(father.getFirstName() + " y " + mother.getFirstName() + " tiene un hijo llamado " + son.getFirstName() + " y una hija llamada " + daughter.getFirstName());
 
         if (father.IsMarriedWith(mother))
         {
-            Debug.Log(father.firtsName + " y " + mother.firtsName + " están casados");
+            Debug.Log(father.getFirstName() + " y " + mother.getFirstName() + " están casados");
         }else
         {
-            Debug.Log(father.firtsName + " y " + mother.firtsName + " no están casados");
+            Debug.Log(father.getFirstName() + " y " + mother.getFirstName() + " no están casados");
         }
 
         Person.SayHello();        
