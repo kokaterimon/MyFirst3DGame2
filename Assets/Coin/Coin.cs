@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour{
     void Start()
     {
         Coin.coinsCount++;
-        Debug.Log("El juego ha comenzado y ahora hay" + Coin.coinsCount + ("monedas"));
+        Debug.Log("El juego ha comenzado y ahora hay " + Coin.coinsCount + (" monedas"));
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class Coin : MonoBehaviour{
             
             Coin.coinsCount--;
 
-            Debug.Log("Hemos recogido la moneda y ahora hay" + Coin.coinsCount + ("monedas"));
+            Debug.Log("Hemos recogido la moneda y ahora hay " + Coin.coinsCount + (" monedas"));
 
             if (Coin.coinsCount == 0)
             {
